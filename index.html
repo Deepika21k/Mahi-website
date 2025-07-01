@@ -1,0 +1,2260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from embassyitsolutions.com/template1/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 06 Jun 2025 10:45:59 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSR ACADEMIA - Sustainable Fashion Design</title>
+    
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+/* Header Container */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fff; /* Adjust as needed */
+}
+
+/* Logo Styling */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 50px; /* Adjust as needed */
+    margin-right: 10px;
+}
+
+/* Navigation Menu */
+.main-navigation {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333; /* Adjust as needed */
+    font-weight: bold;
+}
+
+/* Apply Now Button */
+.apply-container {
+    display: flex;
+    align-items: center;
+}
+
+.apply-btn {
+    background-color: #007bff; /* Adjust as needed */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.apply-btn:hover {
+    background-color: #0056b3; /* Adjust as needed */
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+    display: none; /* Hide by default; show with media queries if needed */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .main-navigation {
+        width: 100%;
+        justify-content: flex-start;
+    }
+    
+    .nav-menu {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .nav-item {
+        margin: 5px 0;
+    }
+    
+    .apply-container {
+        width: 100%;
+        justify-content: flex-start;
+        margin-top: 10px;
+    }
+    
+    .menu-toggle {
+        display: block;
+        /* Additional styling for the toggle button */
+    }
+}
+
+
+
+        /* Clean Header Styles */
+        :root {
+            --primary: #000000;
+            --secondary: #ffffff;
+            --accent: #ff3366;
+            --gray-light: #f8f8f8;
+            --gray-medium: #e0e0e0;
+            --gray-dark: #555555;
+            --font-primary: 'Inter', sans-serif;
+            --font-heading: 'Prata', serif;
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: var(--font-primary);
+            background-color: var(--secondary);
+            color: var(--primary);
+            line-height: 1.6;
+        }
+        
+        /* News Ticker */
+        .news-ticker {
+            background-color: var(--primary);
+            color: var(--secondary);
+            padding: 10px 0;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .ticker-wrapper {
+            display: flex;
+            width: 100%;
+            overflow: hidden;
+        }
+        
+        .ticker-content {
+            display: flex;
+            animation: ticker 30s linear infinite;
+            white-space: nowrap;
+            align-items: center;
+        }
+        
+        .ticker-item {
+            padding: 0 30px;
+            font-size: 13px;
+            letter-spacing: 0.5px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .ticker-item::after {
+            content: '•';
+            margin-left: 30px;
+        }
+        
+        @keyframes ticker {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        
+        /* Main Header */
+        .site-header {
+            background-color: var(--secondary);
+            border-bottom: 1px solid var(--gray-medium);
+            padding: 20px 0;
+            position: relative;
+            z-index: 100;
+        }
+        
+        .header-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        /* Logo */
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+        
+        .site-logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: var(--primary);
+        }
+        
+        .logo-main {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .logo-text {
+            font-family: var(--font-heading);
+            font-size: 24px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            line-height: 1;
+            color: var(--primary);
+        }
+        
+        .logo-tagline {
+            font-family: var(--font-primary);
+            font-size: 9px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--gray-dark);
+            margin-top: 4px;
+        }
+        
+        .logo-divider {
+            width: 1px;
+            height: 35px;
+            background-color: var(--primary);
+            margin: 0 15px;
+        }
+        
+        .logo-abbr {
+            font-family: var(--font-heading);
+            font-size: 24px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            color: var(--primary);
+        }
+        
+        /* Navigation */
+        .main-navigation {
+            display: flex;
+            align-items: center;
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-item {
+            margin: 0 20px;
+        }
+        
+        .nav-link {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--primary);
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 8px 0;
+            position: relative;
+            transition: var(--transition);
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent);
+            transition: var(--transition);
+        }
+        
+        .nav-link:hover {
+            color: var(--accent);
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        /* Apply Button */
+        .apply-btn {
+            background-color: var(--primary);
+            color: var(--secondary);
+            border: none;
+            padding: 12px 25px;
+            font-family: var(--font-primary);
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: var(--transition);
+            margin-left: 20px;
+        }
+        
+        .apply-btn:hover {
+            background-color: var(--accent);
+        }
+        
+        /* Mobile Menu Toggle */
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            width: 30px;
+            height: 20px;
+            position: relative;
+            cursor: pointer;
+            margin-left: 20px;
+        }
+        
+        .toggle-bar {
+            display: block;
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            background-color: var(--primary);
+            transition: var(--transition);
+        }
+        
+        .toggle-bar:nth-child(1) {
+            top: 0;
+        }
+        
+        .toggle-bar:nth-child(2) {
+            top: 9px;
+        }
+        
+        .toggle-bar:nth-child(3) {
+            top: 18px;
+        }
+        
+        .menu-toggle.active .toggle-bar:nth-child(1) {
+            transform: rotate(45deg) translate(6px, 6px);
+        }
+        
+        .menu-toggle.active .toggle-bar:nth-child(2) {
+            opacity: 0;
+        }
+        
+        .menu-toggle.active .toggle-bar:nth-child(3) {
+            transform: rotate(-45deg) translate(6px, -6px);
+        }
+        
+        /* Mobile Menu */
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            right: -300px;
+            width: 300px;
+            height: 100vh;
+            background-color: var(--secondary);
+            padding: 80px 40px 40px;
+            transition: right 0.3s ease;
+            z-index: 99;
+            box-shadow: -5px 0 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .mobile-menu.active {
+            right: 0;
+        }
+        
+        .mobile-nav-list {
+            list-style: none;
+        }
+        
+        .mobile-nav-item {
+            margin: 20px 0;
+        }
+        
+        .mobile-nav-link {
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--primary);
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: var(--transition);
+        }
+        
+        .mobile-nav-link:hover {
+            color: var(--accent);
+        }
+        
+        .mobile-apply {
+            display: inline-block;
+            margin-top: 30px;
+            background-color: var(--primary);
+            color: var(--secondary);
+            padding: 12px 25px;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .mobile-apply:hover {
+            background-color: var(--accent);
+        }
+        
+        .mobile-menu-backdrop {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 98;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+        }
+        
+        .mobile-menu-backdrop.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        /* Header Spacer - Creates gap between header and content */
+        .header-spacer {
+            height: 100px; /* Adjust based on your header height */
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .nav-menu {
+                display: none;
+            }
+            
+            .menu-toggle {
+                display: block;
+            }
+            
+            .header-spacer {
+                height: 80px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header-container {
+                padding: 0 20px;
+            }
+            
+            .logo-abbr, .logo-divider {
+                display: none;
+            }
+            
+            .apply-btn {
+                display: none;
+            }
+            
+            .header-spacer {
+                height: 70px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .logo-text {
+                font-size: 20px;
+            }
+            
+            .ticker-item {
+                padding: 0 15px;
+                font-size: 12px;
+            }
+            
+            .ticker-item::after {
+                margin-left: 15px;
+            }
+        }
+
+
+
+        /* Floating Header Styles */
+.floating-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.site-header {
+    transition: all 0.3s ease;
+    padding: 20px 0;
+}
+
+/* When the header is floating, reduce the padding and add a shadow */
+.floating-header .site-header {
+    padding: 10px 0;
+    background-color: var(--secondary);
+    border-bottom: 1px solid var(--gray-medium);
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.site-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-img {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.logo-img1 {
+    height: 110px; /* Taller first logo */
+}
+
+.logo-img2 {
+    height: 90px; /* Shorter second logo */
+    margin-left: -70px; /* Optional: reduce space between them */
+}
+
+    </style>
+<style>
+.footer-section {
+    background: #222;
+    color: white;
+    padding: 40px 0;
+    font-size: 14px;
+}
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.footer-logo-center {
+    margin: 20px 0;
+}
+.center-logo {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    background: pink;
+    padding: 10px;
+    border-radius: 10px;
+}
+.footer-extra-img {
+    width: 100px;
+    display: block;
+    margin-bottom: 10px;
+}
+.footer-caption {
+    color: white;
+    font-size: 12px;
+    margin-top: 5px;
+}
+.footer-links ul,
+.footer-contact ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-links ul li,
+.footer-contact ul li {
+    margin-bottom: 5px;
+}
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.footer-links ul li a:hover {
+    color: #ff1493;
+}
+.footer-map {
+    margin-top: 15px;
+}
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #444;
+}
+.footer-bottom a {
+    color: #ff1493;
+    text-decoration: none;
+}
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Fix dropdown positioning */
+.dropdown {
+    position: relative;
+}
+
+/* Prevent layout shift */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    padding: 10px 15px;
+    list-style: none;
+    min-width: 160px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    border-radius: 4px;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Dropdown links */
+.dropdown-link {
+    display: block;
+    padding: 8px 12px;
+    color: #333;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.dropdown-link:hover {
+    color: #e148c0;
+    background-color: #f9f9f9;
+}
+
+/* Ensure all nav items align vertically */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: -30px; /* 👈 Reduced space between items */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-menu > li {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Reduced padding for tighter spacing */
+.nav-menu > li > a {
+    display: inline-block;
+    padding: 8px 10px; /* 👈 Reduced inner link spacing */
+    line-height: 1.2;
+    vertical-align: middle;
+}
+
+</style>
+</head>
+
+<body>
+    <!-- News Ticker -->
+    <div class="news-ticker">
+        <div class="ticker-wrapper">
+            <div class="ticker-content">
+                <!-- Duplicate items for continuous scrolling -->
+                <div class="ticker-item">STUDENT SHOWCASE: APRIL 15-20, 2025</div>
+                <div class="ticker-item">INDUSTRY PARTNERSHIPS WITH LEADING FASHION HOUSES</div>
+                <div class="ticker-item">SUSTAINABLE FASHION INNOVATION HUB</div>
+                <div class="ticker-item">ADMISSIONS OPEN FOR 2025-26</div>
+                
+                <!-- Duplicate for seamless loop -->
+                <div class="ticker-item">STUDENT SHOWCASE: APRIL 15-20, 2025</div>
+                <div class="ticker-item">INDUSTRY PARTNERSHIPS WITH LEADING FASHION HOUSES</div>
+                <div class="ticker-item">SUSTAINABLE FASHION INNOVATION HUB</div>
+                <div class="ticker-item">ADMISSIONS OPEN FOR 2025-26</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header id="masthead" class="site-header">
+    <div class="header-container">
+        <!-- Logo -->
+        <div class="logo-container">
+    <a href="index.html" class="site-logo">
+        <img src="images/Preview.png (1).jpg" alt="Logo 1" class="logo-img logo-img1">
+        <!-- <img src="images/logonew.png" alt="Logo 2" class="logo-img logo-img2"> -->
+    </a>
+</div>
+
+        
+        <!-- Navigation -->
+        <nav class="main-navigation">
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">ABOUT</a></li>
+                <li class="mobile-nav-item dropdown">
+        <a href="course.html" class="mobile-nav-link">WORKS</a>
+        <ul class="dropdown-menu">
+            <li><a href="wedding.html" class="dropdown-link">Wedding</a></li>
+            <li><a href="bridal.html" class="dropdown-link">Bridal</a></li>
+            <li><a href="birthday.html" class="dropdown-link">Birthdays</a></li>
+        </ul>
+    </li>
+                <!-- <li class="nav-item"><a href="infrastructure.html" class="nav-link">INFRASTRUCTURE</a></li> -->
+                <li class="nav-item"><a href="gallery.html" class="nav-link">GALLERY</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">CONTACT</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Apply Now Button -->
+        <div class="apply-container">
+    <a href="contact.html">
+        <button class="apply-btn">APPLY NOW</button>
+    </a>
+</div>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="menu-toggle" aria-label="Toggle Menu">
+            <span class="toggle-bar"></span>
+            <span class="toggle-bar"></span>
+            <span class="toggle-bar"></span>
+        </button>
+    </div>
+</header>
+
+    
+    <!-- Header Spacer - Creates gap between header and content -->
+    
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu-backdrop"></div>
+    <div class="mobile-menu">
+        <ul class="mobile-nav-list">
+            <li class="mobile-nav-item"><a href="index.html" class="mobile-nav-link">Home</a></li>
+            <li class="mobile-nav-item"><a href="about.html" class="mobile-nav-link">ABOUT</a></li>
+            <li class="mobile-nav-item"><a href="course.html" class="mobile-nav-link">COURSES</a></li>
+            <li class="mobile-nav-item"><a href="infrastructure.html" class="mobile-nav-link">INFRASTRUCTURE</a></li>
+             <li class="mobile-nav-item"><a href="gallery.html".php" class="mobile-nav-link">GALLERY</a></li>
+            <li class="mobile-nav-item"><a href="contact.html" class="mobile-nav-link">CONTACT</a></li>
+        </ul>
+        <a href="contact.html" class="mobile-apply">APPLY NOW</a>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    // Mobile menu toggle
+    const menuToggle = document.querySelector('.menu-toggle');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const mobileMenuBackdrop = document.querySelector('.mobile-menu-backdrop');
+    
+    function toggleMobileMenu() {
+        menuToggle.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+        mobileMenuBackdrop.classList.toggle('active');
+        document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+    }
+    
+    menuToggle.addEventListener('click', toggleMobileMenu);
+    mobileMenuBackdrop.addEventListener('click', toggleMobileMenu);
+    
+    // Close mobile menu when clicking menu items
+    const mobileMenuItems = document.querySelectorAll('.mobile-nav-link, .mobile-apply');
+    mobileMenuItems.forEach(item => {
+        item.addEventListener('click', toggleMobileMenu);
+    });
+
+    // Add Google Fonts
+    const googleFonts = document.createElement('link');
+    googleFonts.rel = 'stylesheet';
+    googleFonts.href = 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Prata&amp;display=swap';
+    document.head.appendChild(googleFonts);
+
+    // Scroll effect to make header floating
+    const header = document.getElementById('masthead');
+    const headerOffset = header.offsetTop;
+
+    function handleScroll() {
+        if (window.pageYOffset > headerOffset) {
+            header.classList.add('floating-header');
+        } else {
+            header.classList.remove('floating-header');
+        }
+    }
+
+    // Listen to scroll event
+    window.addEventListener('scroll', handleScroll);
+});
+
+    </script>
+</body>
+
+<!-- Mirrored from embassyitsolutions.com/template1/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 06 Jun 2025 10:47:02 GMT -->
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner Slider</title>
+    <script src="../../code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        /* Banner Slider Styles */
+        .msr-hero {
+            width: 100%;
+            height: ; /* Set the height of the hero section */
+            overflow: hidden;
+            position: relative;
+        }
+
+        .msr-slider {
+            display: flex;
+            width: auto; /* 3 slides, each taking up 100% width */
+            transition: transform 1s ease;
+        }
+
+        .msr-slide {
+            width: 100%; /* Each slide takes 100% width */
+            flex-shrink: 0; /* Prevent shrinking */
+            height: 100%;
+        }
+
+        .msr-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures images cover the area without stretching */
+        }
+
+        /* Optional: Style for the individual images */
+        .msr-slide img {
+            border: none;
+        }
+
+
+        .msr-hero {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .msr-slider {
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+
+        .msr-slide {
+            position: relative;
+            width: 100%;
+        }
+
+        .msr-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .overlay-text {
+            position: absolute;
+            top: 50%;
+            left: 5%;
+            transform: translateY(-50%);
+            color: black;
+            font-size: 24px;
+            font-weight: bold;
+            /* background: rgba(255, 255, 255, 0.6); */
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        /* .about-overlay {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.overlay-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    
+    color: #000; 
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 40%;
+}
+
+.know-more-btn {
+    display: block; 
+    margin: 20px auto 0;
+    padding: 12px 24px;
+    background-color: #ff1493; 
+    color: white; 
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    width: fit-content; 
+    transition: background 0.3s ease-in-out;
+}
+
+.know-more-btn:hover {
+    background-color: #d11279; 
+} */
+
+
+
+    </style>
+<style>
+.footer-section {
+    background: #222;
+    color: white;
+    padding: 40px 0;
+    font-size: 14px;
+}
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.footer-logo-center {
+    margin: 20px 0;
+}
+.center-logo {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    background: pink;
+    padding: 10px;
+    border-radius: 10px;
+}
+.footer-extra-img {
+    width: 100px;
+    display: block;
+    margin-bottom: 10px;
+}
+.footer-caption {
+    color: white;
+    font-size: 12px;
+    margin-top: 5px;
+}
+.footer-links ul,
+.footer-contact ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-links ul li,
+.footer-contact ul li {
+    margin-bottom: 5px;
+}
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.footer-links ul li a:hover {
+    color: #ff1493;
+}
+.footer-map {
+    margin-top: 15px;
+}
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #444;
+}
+.footer-bottom a {
+    color: #ff1493;
+    text-decoration: none;
+}
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+</style>
+</head>
+<body>
+    <section class="msr-hero">
+        <div class="msr-slider">
+            <div class="msr-slide">
+                <img src="images/wed1.jpg" alt="Banner Image 1" class="msr-img">
+                <div class="overlay-text">MSRDFM<br>
+                Empowering students to shape their tomorrow</div>
+                
+            </div>
+            <div class="msr-slide">
+                <img src="images/wed2.jpg" alt="Banner Image 2" class="msr-img">
+                <div class="overlay-text">MSRDFM<br>Empowering students to shape their tomorrow</div>
+            </div>
+            <div class="msr-slide">
+                <img src="images/wed1.jpg" alt="Banner Image 3" class="msr-img">
+                <div class="overlay-text">MSRDFM<br>Empowering students to shape their tomorrow</div>
+            </div>
+        </div>
+    </section>
+    <!-- <section class="about-overlay">
+    <div class="overlay-container">
+        <img src="images/girl4.png" alt="Overlay Image" class="overlay-img">
+        <div class="overlay-text">
+            <h1 style="color: #ff1493; font-size: 60px; font-weight: bold; margin-bottom: 20px;">ABOUT US!</h1> 
+
+            <p>We are a sanctuary for the next generation of whole designers—creatives who code, strategists who stitch, and leaders who meditate.</p>
+
+            <p style="margin-top: 15px;">Our curriculum is a tapestry of courses in VR fashion shows, slow fashion philosophy, and entrepreneurial resilience. Here, you don’t just build a portfolio; you build a purpose. We don’t just teach design; we engineer systems, from AI-driven zero-waste production to blockchain-backed ethical sourcing. Rooted in circular economy principles.</p>
+
+            <a href="index.html" class="know-more-btn">Know More</a>
+        </div>
+    </div>
+</section>
+ -->
+
+
+
+    <script>
+        $(document).ready(function() {
+            var slideIndex = 0;
+
+            function showSlides() {
+                var slides = $(".msr-slide");
+                slideIndex++;
+                if (slideIndex >= slides.length) { slideIndex = 0 }
+
+                var newTransformValue = -100 * slideIndex + "%";
+                $(".msr-slider").css("transform", "translateX(" + newTransformValue + ")");
+                
+                setTimeout(showSlides, 3000); // Change image every 3 seconds
+            }
+
+            showSlides();
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .about-section {
+        background: url('images/girl4.png') no-repeat center center/cover;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 50px;
+    }
+
+    .about-container {
+        display: flex;
+        width: 80%;
+        background: rgba(255, 255, 255, 0);
+        /* Optional overlay */
+        padding: 4px;
+    }
+
+    .about-left-column {
+        flex: 1;
+    }
+
+    .about-right-column {
+        flex: 1;
+        padding: 20px;
+    }
+
+    .about-title {
+        color: #D70075;
+        font-size: 80px;
+        font-weight: 300;
+    }
+
+    .about-text {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    .about-button {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 12px 24px;
+        background-color: #D70075;
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: background 0.3s ease-in-out;
+    }
+
+    .about-button:hover {
+        background-color: #B00060;
+    }
+</style>
+
+
+
+
+<section class="about-us-section" data-aos="fade-up">
+  <div class="container">
+    <div class="about-us-grid">
+      <div class="about-image" data-aos="zoom-in">
+        <img src="images/author.jpg" alt="About Us Image">
+      </div>
+      <div class="about-content" data-aos="fade-left">
+       
+        
+         <h1 class="about-title">About Me!</h1>
+            <p class="about-text"><strong>Photographers who code, storytellers who meditate, and visual strategists who stitch moments into meaning.</strong></p>
+            <p class="about-text">Our lens doesn't just capture light—it captures change.
+
+This is where visual craft meets conscious creation. Our shoots explore everything from virtual reality fashion to the quiet power of slow imagery. Whether documenting raw human resilience or designing AI-assisted zero-waste sets, every frame is intentional. Every photo is engineered for impact. <br>We don’t just take pictures.
+<br>We build visual futures.</p>
+                 <img src="images/sign.png" alt="Signature" class="signature-img">
+            <a href="#" class="about-button">Know More</a>
+            
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Hero Section -->
+<!-- <section class="hero-section">
+    <div class="hero-container"> -->
+<!-- <div class="hero-content">
+            <h1 class="hero-title">TO <span class="highlight">SHAPE</span> THEIR TOMORROW</h1>
+            <p class="hero-text">Where creativity meets sustainability in fashion design. We cultivate visionary designers who transcend borders in sustainable fashion innovation.</p>
+            <div class="hero-buttons">
+                <a href="#courses" class="btn btn-primary">EXPLORE COURSES</a>
+                <a href="#virtual-tour" class="btn btn-video">
+                    <span class="btn-icon"><i class="fas fa-play"></i></span>
+                    <span>VIRTUAL TOUR</span>
+                </a>
+            </div>
+        </div>
+        
+        <div class="hero-media">
+            <div class="hero-image">
+                <img src="images/fashion-design-students.jpg" alt="Fashion Design Students">
+                <div class="image-overlay"></div>
+            </div>
+        </div>
+    </div> -->
+
+
+
+
+<style>
+.about-us-section {
+  padding: 80px 20px;
+  background-color: #fff;
+}
+.about-us-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+.about-image {
+  flex: 1 1 45%;
+}
+.about-image img {
+  height: 500px;  
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.about-image img:hover {
+  transform: scale(1.03);
+}
+.about-content {
+  flex: 1 1 50%;
+}
+.section-subtitle {
+  font-size: 16px;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 10px 0 20px;
+  color: #333;
+}
+.signature-img {
+  margin-top: 20px;
+  width: 150px;
+}
+
+
+
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #ffffff;
+    }
+
+    .courses-section {
+        text-align: center;
+        padding: 50px 0;
+        overflow: hidden;
+    }
+
+    .courses-title {
+        font-size: 40px;
+        color: #D70075;
+        margin-bottom: 30px;
+    }
+
+    .courses-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        width: 100%;
+        position: relative;
+    }
+
+    .course-slider {
+        display: flex;
+        transition: transform 0.8s ease-in-out;
+        width: max-content;
+    }
+
+    .course-box {
+        flex: 0 0 400px;
+        /* Bigger Box */
+        height: 300px;
+        /* Taller Box */
+        margin: 0 20px;
+        background-color: black;
+        color: #FFFFFF;
+        /* Bright White Text */
+        text-align: center;
+        padding: 50px;
+        border-radius: 15px;
+        display: inline-block;
+        white-space: normal;
+    }
+
+    .course-box h3 {
+        color: #D70075;
+        text-transform: uppercase;
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .course-box p {
+        font-size: 22px;
+        font-weight: bold;
+        color: #FFFFFF;
+        /* Bright White Text */
+        margin: 20px 0;
+    }
+
+    .course-box span {
+        display: block;
+        font-size: 18px;
+        color: #D70075;
+        /* Pink for contrast */
+        margin-top: 15px;
+    }
+
+    .course-box {
+        flex: 0 0 400px;
+        /* Width remains the same */
+        height: 350px;
+        /* Increased height */
+        margin: 0 10px;
+        /* Reduced horizontal margin */
+        background-color: black;
+        color: #FFFFFF;
+        /* Bright White Text */
+        text-align: center;
+        padding: 50px;
+        border-radius: 0;
+        /* Removed rounded corners */
+        display: inline-block;
+        white-space: normal;
+    }
+</style>
+<style>
+.footer-section {
+    background: #222;
+    color: white;
+    padding: 40px 0;
+    font-size: 14px;
+}
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.footer-logo-center {
+    margin: 20px 0;
+}
+.center-logo {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    background: pink;
+    padding: 10px;
+    border-radius: 10px;
+}
+.footer-extra-img {
+    width: 100px;
+    display: block;
+    margin-bottom: 10px;
+}
+.footer-caption {
+    color: white;
+    font-size: 12px;
+    margin-top: 5px;
+}
+.footer-links ul,
+.footer-contact ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-links ul li,
+.footer-contact ul li {
+    margin-bottom: 5px;
+}
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.footer-links ul li a:hover {
+    color: #ff1493;
+}
+.footer-map {
+    margin-top: 15px;
+}
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #444;
+}
+.footer-bottom a {
+    color: #ff1493;
+    text-decoration: none;
+}
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+</style>
+</head>
+
+<body>
+
+    <section class="courses-section">
+    <h2 class="section-title" style="text-align: center; margin-top: 20px;">Infrastructure</h2>
+    <p class="section-subtitle">Discover our range of innovative courses designed to prepare you for the evolving
+        fashion industry</p>
+    <div class="courses-container">
+        <div class="course-slider">
+            <div class="course-box">
+                <img src="images/author.jpg" alt="Fashion Styling" style="width:100%; height:250px; object-fit: cover; border-radius: 10px;">
+                <!-- <h3>Certificate In Fashion Styling - 03 Months</h3>
+                <span>👤 By MSRDFM</span> -->
+            </div>
+            <div class="course-box">
+                <img src="images/author.jpg" alt="Digital Fashion" style="width:100%; height:250px; object-fit: cover; border-radius: 10px;">
+                <h3>Digital Fashion Certification - 03 Months</h3>
+                <span>👤 By MSRDFM</span>
+            </div>
+            <div class="course-box">
+                <img src="images/author.jpg" alt="Textile Design" style="width:100%; height:250px; object-fit: cover; border-radius: 10px;">
+                <h3>Advanced Textile Designing Certification</h3>
+                <span>👤 By MSRDFM</span>
+            </div>
+            <div class="course-box">
+                <img src="images/author.jpg" alt="Fashion & Apparel" style="width:100%; height:250px; object-fit: cover; border-radius: 10px;">
+                <h3>Diploma In Fashion & Apparel Design - 1 Year</h3>
+                <span>👤 By MSRDFM</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <script>
+        let slider = document.querySelector('.course-slider');
+        let boxes = document.querySelectorAll('.course-box');
+
+        // Duplicate first few boxes for smooth looping
+        boxes.forEach((box) => {
+            let clone = box.cloneNode(true);
+            slider.appendChild(clone);
+        });
+
+        let index = 0;
+        let boxWidth = 440; // Adjusted for box width + margin
+
+        function scrollBoxes() {
+            index++;
+            slider.style.transition = "transform 0.8s ease-in-out";
+            slider.style.transform = `translateX(${-index * boxWidth}px)`;
+
+            // Reset when reaching the duplicate section
+            if (index >= boxes.length) {
+                setTimeout(() => {
+                    slider.style.transition = "none"; // Remove transition for instant jump
+                    slider.style.transform = "translateX(0)";
+                    index = 0;
+                }, 800); // Matches the transition duration
+            }
+        }
+
+        setInterval(scrollBoxes, 3000); // Move every 3 seconds
+    </script>
+
+
+
+
+    <!-- Courses Section -->
+    <!-- <section id="courses" class="courses-section">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Our Programs</span>
+            <h2 class="section-title">Educational Offerings</h2>
+            <p class="section-subtitle">Discover our range of innovative courses designed to prepare you for the evolving fashion industry</p>
+        </div>
+         -->
+    <!-- <div class="courses-tabs">
+            <button class="tab-btn active" data-tab="all">All Courses</button>
+            <button class="tab-btn" data-tab="diploma">Diploma</button>
+            <button class="tab-btn" data-tab="certificate">Certificate</button>
+            <button class="tab-btn" data-tab="specialized">Specialized</button>
+        </div>
+        
+        <div class="courses-grid">
+            
+            <div class="course-card" data-category="diploma">
+                <div class="course-image">
+                    <img src="images/course-fashion-apparel.jpg" alt="Fashion & Apparel Design">
+                    <div class="course-duration">1 Year</div>
+                </div>
+                <div class="course-content">
+                    <div class="course-icon">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <h3 class="course-title">Fashion & Apparel Design</h3>
+                    <ul class="course-features">
+                        <li>Understanding the world of Design</li>
+                        <li>Analysis of Fabrics and components</li>
+                        <li>Illustration techniques</li>
+                        <li>3D prototyping and e-fashion</li>
+                    </ul>
+                    <a href="#fashion-apparel" class="course-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+        
+            <div class="course-card" data-category="certificate">
+                <div class="course-image">
+                    <img src="images/course-fashion-styling.jpg" alt="Fashion Styling">
+                    <div class="course-duration">3 Months</div>
+                </div>
+                <div class="course-content">
+                    <div class="course-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 class="course-title">Fashion Styling</h3>
+                    <ul class="course-features">
+                        <li>Fashion styling fundamentals</li>
+                        <li>Editorial and commercial styling</li>
+                        <li>Personal styling techniques</li>
+                        <li>Portfolio development</li>
+                    </ul>
+                    <a href="#fashion-styling" class="course-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            
+            <div class="course-card" data-category="certificate">
+                <div class="course-image">
+                    <img src="images/course-digital-fashion.jpg" alt="Digital Fashion">
+                    <div class="course-duration">3 Months</div>
+                </div>
+                <div class="course-content">
+                    <div class="course-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="course-title">Digital Fashion Certification</h3>
+                    <ul class="course-features">
+                        <li>3D garment modeling</li>
+                        <li>Digital fabric creation</li>
+                        <li>Virtual fashion shows</li>
+                        <li>AR/VR fashion applications</li>
+                    </ul>
+                    <a href="#digital-fashion" class="course-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            
+            <div class="course-card" data-category="specialized">
+                <div class="course-image">
+                    <img src="images/course-sustainability.jpg" alt="Sustainability and Forecasting">
+                    <div class="course-duration">6 Months</div>
+                </div>
+                <div class="course-content">
+                    <div class="course-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="course-title">Sustainability and Forecasting</h3>
+                    <ul class="course-features">
+                        <li>Circular economy principles</li>
+                        <li>Sustainable materials sourcing</li>
+                        <li>Trend forecasting methodologies</li>
+                        <li>Ethical production practices</li>
+                    </ul>
+                    <a href="#sustainability" class="course-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div> -->
+
+
+
+    <div class="courses-cta">
+        <a href="courses.html" class="btn btn-outline">Explore All Courses</a>
+
+    </div>
+    </section>
+
+    <section class="cta-section" style="margin-top: 50px;">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Shape the Future of Fashion?</h2>
+                <p class="cta-text" style="color: white;">Applications for the 2025-26 academic year are now open. Join
+                    our community of forward-thinking designers and innovators.</p>
+
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">Apply Now</a>
+                    <a href="contact.html" class="btn btn-outline">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .gallery-container {
+            display: flex;
+            gap: 20px;
+            width: 100%;
+            max-width: 100vw;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .gallery-list {
+            width: 20%;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .gallery-list-wrapper {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            transition: transform 1s ease-in-out;
+        }
+
+        .gallery-list img {
+            width: 100%;
+            height: calc(80vh / 3 - 10px);
+            cursor: pointer;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+
+        .gallery-preview {
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .gallery-preview img {
+            width: 100%;
+            max-height: 80vh;
+            border-radius: 10px;
+            object-fit: cover;
+            transition: opacity 0.3s ease;
+        }
+    </style>
+
+    <h2 class="section-title" style="text-align: center; margin-top: 20px;">Infrastructure</h2>
+
+
+    <div class="gallery-container">
+
+        <div class="gallery-list" id="thumbnailContainer">
+            <div class="gallery-list-wrapper" id="thumbnailList">
+                <!-- Thumbnails will be inserted dynamically -->
+            </div>
+        </div>
+        <div class="gallery-preview">
+            <img id="mainImage" src="#" alt="Large Preview">
+        </div>
+    </div>
+
+    <script>
+        const images = [
+            { thumb: "images/ee.jpg", full: "images/ee.jpg" },
+            { thumb: "images/im1.jpg", full: "images/im1.jpg" },
+          { thumb: "images/ee.jpg", full: "images/ee.jpg" },
+           { thumb: "images/im2.jpg", full: "images/im2.jpg" },
+            { thumb: "images/ee.jpg", full: "images/ee.jpg" },
+{ thumb: "images/wed1.jpg", full: "images/wed1.jpg" },
+        ];
+
+        const thumbnailContainer = document.getElementById("thumbnailContainer");
+        const thumbnailList = document.getElementById("thumbnailList");
+        const mainImage = document.getElementById("mainImage");
+        let autoScroll, thumbScroll;
+        let userClicked = false;
+        let thumbIndex = 0;
+
+        images.forEach((img, index) => {
+            const thumb = document.createElement("img");
+            thumb.src = img.thumb;
+            thumb.alt = `Thumbnail ${index + 1}`;
+            thumb.onclick = () => {
+                userClicked = true;
+                changeImage(img.full);
+                setTimeout(() => userClicked = false, 5000);
+            };
+            thumbnailList.appendChild(thumb);
+        });
+
+        function changeImage(src) {
+            mainImage.style.opacity = 0;
+            setTimeout(() => {
+                mainImage.src = src;
+                mainImage.style.opacity = 1;
+            }, 300);
+        }
+
+        function startAutoScroll() {
+            let index = 0;
+            autoScroll = setInterval(() => {
+                if (!userClicked) {
+                    index = (index + 1) % images.length;
+                    changeImage(images[index].full);
+                }
+            }, 3000);
+        }
+
+        function startThumbScroll() {
+            thumbScroll = setInterval(() => {
+                if (!userClicked) {
+                    thumbIndex = (thumbIndex + 1) % (images.length - 2);
+                    thumbnailList.style.transform = `translateY(-${thumbIndex * (80 / 3)}vh)`;
+                }
+            }, 3000);
+        }
+
+        if (images.length > 0) {
+            changeImage(images[0].full);
+            startAutoScroll();
+            startThumbScroll();
+        }
+    </script>
+
+
+
+
+    <!-- Features Section -->
+    <!-- <section id="features" class="features-section">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Why Choose Us</span>
+            <h2 class="section-title">What Sets Us Apart</h2>
+        </div>
+        
+        <div class="features-grid">
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <i class="fas fa-vr-cardboard"></i>
+                </div>
+                <h3 class="feature-title">Pioneer Sustainable Tech</h3>
+                <p class="feature-text">Master tools like 3D garment prototyping, bio-material innovation, and carbon footprint analytics.</p>
+            </div>
+            
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3 class="feature-title">Industry Connections</h3>
+                <p class="feature-text">Access mentorship from industry leaders and participate in exclusive internship opportunities with top fashion houses.</p>
+            </div>
+            
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <h3 class="feature-title">Lead with Ethics</h3>
+                <p class="feature-text">Graduate as a sustainability-certified designer, ready to disrupt fast fashion with ethical practices.</p>
+            </div>
+            
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <i class="fas fa-globe-americas"></i>
+                </div>
+                <h3 class="feature-title">Global Perspective</h3>
+                <p class="feature-text">Access wellness workshops, global maker residencies, and diverse cultural design approaches.</p>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+    <section class="leader-section">
+        <div class="leader-container">
+            <div class="leader-content" id="leader-slider">
+                <div class="leader-item" style="display: block; text-align: center;">
+                    <img src="images/founder.jpg" alt="Founder's Photo" class="leader-photo">
+                    <h3 class="leader-name">Founder's Name</h3>
+                    <span class="leader-role">FOUNDER</span>
+                    <p class="leader-quote">&ldquo;This is your space to experiment, fail, and rise. Let’s rewrite the
+                        rules—not for fame, but for impact.&rdquo;</p>
+                </div>
+                <div class="leader-item" style="display: none; text-align: center;">
+                    <img src="images/founder.jpg" alt="Principal's Photo" class="leader-photo">
+                    <h3 class="leader-name">Principal's Name</h3>
+                    <span class="leader-role">PRINCIPAL</span>
+                    <p class="leader-quote">&ldquo;Education is the foundation of innovation. We nurture thinkers,
+                        creators, and visionaries.&rdquo;</p>
+                </div>
+                <div class="leader-item" style="display: none; text-align: center;">
+                    <img src="images/founder.jpg" alt="Chairperson's Photo" class="leader-photo">
+                    <h3 class="leader-name">Chairperson's Name</h3>
+                    <span class="leader-role">CHAIRPERSON</span>
+                    <p class="leader-quote">&ldquo;Leadership is about inspiring change and creating opportunities for
+                        the future.&rdquo;</p>
+                </div>
+            </div>
+            <div class="leader-nav" style="justify-content: center;">
+                <button class="prev-btn" onclick="changeSlide(-1)">&lt; PREV</button>
+                <button class="next-btn" onclick="changeSlide(1)">NEXT &gt;</button>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .leader-section {
+            position: relative;
+            background: url('images/bgbg1.jpg') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            overflow: hidden;
+        }
+
+        .leader-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        .leader-container {
+            position: relative;
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 800px;
+            z-index: 1;
+        }
+
+        .leader-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+
+        .leader-item {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .leader-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin: 0 auto 15px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .leader-name {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .leader-role {
+            font-size: 14px;
+            color: #ff0080;
+        }
+
+        .leader-quote {
+            font-style: italic;
+            margin: 15px 0;
+            color: #fff;
+        }
+
+        .leader-nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        .prev-btn,
+        .next-btn {
+            background: transparent;
+            border: 1px solid #fff;
+            color: #fff;
+            padding: 8px 15px;
+            cursor: pointer;
+        }
+
+        .prev-btn:hover,
+        .next-btn:hover {
+            background: #ff0080;
+            border-color: #ff0080;
+        }
+    </style>
+
+    <script>
+        let currentIndex = 0;
+        const slides = document.querySelectorAll('.leader-item');
+
+        function changeSlide(direction) {
+            slides[currentIndex].style.display = 'none';
+            currentIndex = (currentIndex + direction + slides.length) % slides.length;
+            slides[currentIndex].style.display = 'block';
+        }
+    </script>
+
+
+
+
+
+    <!-- Testimonials Section -->
+
+
+    <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            width: 100%;
+            max-width: 100%;
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+
+   
+
+
+
+
+
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Course tabs functionality
+            const tabButtons = document.querySelectorAll('.tab-btn');
+            const courseCards = document.querySelectorAll('.course-card');
+
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+
+                    // Add active class to clicked button
+                    button.classList.add('active');
+
+                    const filter = button.getAttribute('data-tab');
+
+                    // Filter courses
+                    courseCards.forEach(card => {
+                        if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // Testimonial slider functionality
+            const dots = document.querySelectorAll('.dot');
+            const testimonials = document.querySelectorAll('.testimonial-item');
+            const prevBtn = document.querySelector('.prev');
+            const nextBtn = document.querySelector('.next');
+
+            let currentSlide = 0;
+            const totalSlides = testimonials.length;
+
+            function showSlide(index) {
+                // Hide all testimonials
+                testimonials.forEach(testimonial => {
+                    testimonial.classList.remove('active');
+                });
+
+                // Remove active class from all dots
+                dots.forEach(dot => {
+                    dot.classList.remove('active');
+                });
+
+                // Show selected testimonial
+                testimonials[index].classList.add('active');
+
+                // Add active class to selected dot
+                dots[index].classList.add('active');
+            }
+
+            // Navigate to previous slide
+            if (prevBtn) {
+                prevBtn.addEventListener('click', () => {
+                    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+                    showSlide(currentSlide);
+                });
+            }
+
+            // Navigate to next slide
+            if (nextBtn) {
+                nextBtn.addEventListener('click', () => {
+                    currentSlide = (currentSlide + 1) % totalSlides;
+                    showSlide(currentSlide);
+                });
+            }
+
+            // Handle dot clicks
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    currentSlide = index;
+                    showSlide(currentSlide);
+                });
+            });
+
+            // Auto slide every 5 seconds
+            setInterval(() => {
+                currentSlide = (currentSlide + 1) % totalSlides;
+                showSlide(currentSlide);
+            }, 5000);
+
+            // Smooth scroll for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        const headerHeight = document.querySelector('.site-header').offsetHeight;
+                        const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // Animate elements on scroll
+            function animateOnScroll() {
+                const elements = document.querySelectorAll('.section-header, .about-block, .course-card, .feature-item, .testimonial-content');
+
+                elements.forEach(element => {
+                    const elementPosition = element.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+
+                    if (elementPosition < windowHeight * 0.8) {
+                        element.classList.add('animated');
+                    }
+                });
+            }
+
+            // Run on load
+            animateOnScroll();
+
+            // Run on scroll
+            window.addEventListener('scroll', animateOnScroll);
+
+            // Add Font Awesome if not already added
+            if (!document.querySelector('link[href*="font-awesome"]')) {
+                const fontAwesome = document.createElement('link');
+                fontAwesome.rel = 'stylesheet';
+                fontAwesome.href = '../../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css';
+                document.head.appendChild(fontAwesome);
+            }
+        });
+    </script>
+    <script>
+        const track = document.querySelector(".course-track");
+        const prevButton = document.querySelector(".left-arrow");
+        const nextButton = document.querySelector(".right-arrow");
+        const courses = document.querySelectorAll(".course-content");
+
+        let index = 0;
+        const coursesPerView = 3; // Show exactly 3 courses at a time
+        const totalCourses = courses.length;
+
+        // Clone first and last few items for infinite effect
+        for (let i = 0; i < coursesPerView; i++) {
+            let firstClone = courses[i].cloneNode(true);
+            let lastClone = courses[totalCourses - 1 - i].cloneNode(true);
+            track.appendChild(firstClone);
+            track.insertBefore(lastClone, track.firstChild);
+        }
+
+        const courseWidth = courses[0].offsetWidth; // Get course width dynamically
+        track.style.transform = `translateX(-${courseWidth * coursesPerView}px)`; // Start from first real course
+
+        nextButton.addEventListener("click", () => moveSlide(1));
+        prevButton.addEventListener("click", () => moveSlide(-1));
+
+        function moveSlide(direction) {
+            index += direction;
+            track.style.transition = "transform 0.5s ease-in-out";
+            track.style.transform = `translateX(-${(index + coursesPerView) * courseWidth}px)`;
+
+            // Reset position instantly after animation ends (infinite effect)
+            track.addEventListener("transitionend", () => {
+                if (index >= totalCourses) {
+                    index = 0;
+                    track.style.transition = "none";
+                    track.style.transform = `translateX(-${courseWidth * coursesPerView}px)`;
+                } else if (index < 0) {
+                    index = totalCourses - 1;
+                    track.style.transition = "none";
+                    track.style.transform = `translateX(-${(index + coursesPerView) * courseWidth}px)`;
+                }
+            });
+        }
+
+
+
+    </script>
+
+    
+<footer class="footer-section">
+    <div class="container">
+    <div class="widget logo" style="display: flex; justify-content: center;">
+    <img src="images/logopink.png" alt="img" style="width: 400px; height: auto;">
+</div>
+
+        <div class="footer-top row">
+        <div class="col-md-4 footer-image text-center">
+    <img src="images/logobg.png" alt="Another Image" class="footer-extra-img" style="width: 190px; height: auto;">
+    <p class="footer-caption">Empowering students to shape their tomorrow.</p>
+    <style>
+            .header-soc a {
+                font-size: 40px !important; /* Adjust size */
+                margin: 0 10px; /* Space between icons */
+                display: inline-block;
+                color: white; /* Ensure icons are visible */
+            }
+        </style>
+
+        <span class="header-soc">
+            <span style="color: white; font-weight: bold;">Follow Us On:</span><br>
+
+            <span><a href="#" class="fa fa-facebook"></a></span>
+            <span><a href="#" class="fa fa-twitter"></a></span>
+            <span><a href="#" class="fa fa-youtube-play"></a></span>
+            <span><a href="#" class="fa fa-instagram"></a></span>
+        </span>
+</div>
+
+            
+            <div class="col-md-4 footer-links">
+            <h4 style="font-size: 24px; font-weight: bold;">Quick Links</h4>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="infrastructure.html">Infrastructure</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="col-md-4 footer-contact">
+            <h4 style="font-size: 24px; font-weight: bold;">Contact Us</h4>
+
+                <ul>
+                    <li>Phone:  7338402422</li>
+                    <li>Email: mahendra786mahi@gmail.com</li>
+                    <li>Address: Bangalore, Karnataka</li>
+                </ul>
+                
+                <!-- Google Map Embed -->
+                <div class="footer-map">
+                    <iframe 
+                        width="100%" 
+                        height="200" 
+                        frameborder="0" 
+                        style="border: 0; border-radius: 10px;" 
+                        allowfullscreen 
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        src="https://www.google.com/maps/place/Bengaluru,+Karnataka">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        
+        <!-- <div class="footer-logo-center text-center">
+            <img src="images/logopink.png" alt="Logo" class="center-logo">
+        </div> -->
+        
+        <div class="footer-bottom text-center" style="color: white;">
+    <p>&copy; 2025 All Rights Reserved. Developed by 
+        <a href="https://embassyit.com/" target="_blank" style="color: white;">Embassy IT Solutions</a>
+    </p>
+</div>
+
+
+    </div>
+</footer>
+
+
+<div class="social-sidebar">
+		<a href="#" class="fa fa-facebook"></a>
+		<a href="#" class="fa fa-twitter"></a>
+		<a href="#" class="fa fa-youtube-play"></a>
+		<a href="#" class="fa fa-instagram"></a>
+	</div>
+	
+	<style>
+	/* Social Media Sidebar */
+	.social-sidebar {
+		position: fixed;
+		right: 10px;  /* Moved to the right */
+		top: 50%;
+		transform: translateY(-50%);
+		display: flex;
+		flex-direction: column;
+		gap: 15px; /* Spacing between icons */
+		z-index: 999; /* Ensures it stays on top */
+	}
+	
+	.social-sidebar a {
+		font-size: 25px;
+		color: white !important; /* Force white color */
+		background: black; /* Black background */
+		padding: 10px;
+		border-radius: 50%;
+		text-align: center;
+		width: 40px;
+		height: 40px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: background 0.3s, transform 0.2s;
+	}
+	
+	/* Force white icons */
+	.social-sidebar a::before {
+		color: white !important;
+	}
+	
+	.social-sidebar a:hover {
+		background: #555; /* Slightly lighter black on hover */
+		transform: scale(1.1);
+	}
+	</style>
+
+
+
+
